@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
+    <style>
+        body {
+            padding-top: 56px;
+            background-image: url('https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?cs=srgb&dl=pexels-iriser-1366957.jpg&fm=jpg'); /* High-resolution image URL */
+            background-repeat: no-repeat; 
+            background-size: cover; /* Ensure the image covers the entire viewport */
+            background-position: center; /* Center the image */
+            margin: 0; 
+            height: 100vh; 
+            color: #ffffff; 
+        }
+        .portfolio-item {   
+            margin-bottom: 30px;
+        }
+        .profile-image {
+            width: 150px; /* Adjust the size as needed */
+            height: 150px; /* Adjust the size as needed */
+            border-radius: 50%;
+            border: 5px solid #fff; /* Optional: Adds a border around the image */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for better visibility */
+        }
+        .hero-text {
+            color: white;
+            text-align: center;
+            padding: 60px 20px; /* Adjust padding for better positioning */
+        }
+        /* Custom background colors for portfolio items */
+        .bg-project1 {
+            background-color: #87878aee; /* Light grey */
+        }
+        .bg-project2 {  
+            background-color: #727275ee; /* Slightly darker grey */
+        }
+        .bg-project3 {
+            background-color: #6c6c6eee; /* Even darker grey */
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #333; /* Adjust icon color as needed */
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff; /* Adjust hover color as needed */
+        }
+        /* New class for background color section */
+        .bg-color-section {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 40px 0; /* Adds vertical padding */
+        }
+        /* New class for tools section */
+        .tools-section {
+            padding: 60px 0;
+            background-color: #343a40; /* Dark background for contrast */
+        }
+        .tools-section img {
+            width: 100px; /* Adjust icon size as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin: 20px; /* Space between icons */
+        }
+        .tools-section h2 {
+            color: #ffffff; /* White text color for header */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Picture Icon Section -->
+    <section class="text-center mt-5">
+        <img src="profile2.jpg" alt="Profile Picture" class="profile-image">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container text-center mt-3">
+        <h1>YourDevRom</h1>
+        <br>
+        <br>
+
+        <h1>About Me</h1>
+        <p>Hi, I'm Robby Pineda, a passionate web developer with a knack for crafting modern, responsive websites that not only look great but also function flawlessly. With a deep understanding of the latest web technologies and trends, I specialize in creating user-centric designs that provide seamless experiences across all devices.
+
+            My journey in web development started with a fascination for technology and a desire to solve problems creatively. Over the years, I've honed my skills in front-end and back-end development, working with a variety of frameworks and tools to build dynamic and engaging web applications. Whether it's optimizing performance, enhancing user interfaces, or integrating complex functionalities, I approach each project with meticulous attention to detail and a commitment to excellence.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container mt-5">
+        <h2 class="text-center">My Work</h2>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <div class="card bg-project1">
+                    <img src="project1.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">I’m Robby Pineda, a passionate web developer dedicated to building innovative and user-centric websites. With a strong foundation in both front-end and back-end technologies, I specialize in creating responsive, visually appealing, and highly functional web solutions that drive engagement and deliver exceptional user experiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <div class="card bg-project2">
+                    <img src="nodejs-projects-lead_.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">I've leveraged Node.js to build robust and scalable server-side applications. My Node.js projects demonstrate my proficiency in creating high-performance applications with real-time capabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <div class="card bg-project3">
+                    <img src="AngularJs-Frameworks.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">I excel in developing Angular projects, utilizing its powerful framework to build dynamic, high-performance applications. My expertise in Angular allows me to create scalable and maintainable solutions, ensuring seamless user experiences and efficient development processes. From crafting interactive interfaces to integrating complex functionalities, I leverage Angular's features to deliver top-notch, responsive web applications tailored to meet diverse business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Tools I Use Section -->
+<section class="tools-section text-center">
+    <div class="container">
+        <h2>Tools I Use</h2>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="bootsrap.png" alt="Bootstrap" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="angular.png" alt="Angular" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="github.png" alt="GitHub" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="nodejs.jpg" alt="Node.js" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <img src="webpack.png" alt="Webpack" class="img-fluid">
+            </div>
+            <div class="col-md-2">
+                <!-- New Icon -->
+                <img src="images.png" alt="New Tool" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+         <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center">Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Connect with Me Section -->
+<section id="connect" class="container mt-5">
+    <h2 class="text-center mb-4">Connect with Me</h2>
+    <div class="row text-center">
+        <div class="col-md-3 mb-4">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="d-block connect-icon">
+                <i class="fab fa-linkedin fa-4x"></i>
+                <p class="mt-2">LinkedIn</p>
+            </a>
+        </div>
+        <div class="col-md-3 mb-4">
+            <a href="https://github.com/yourusername" target="_blank" class="d-block connect-icon">
+                <i class="fab fa-github fa-4x"></i>
+                <p class="mt-2">GitHub</p>
+            </a>
+        </div>
+        <div class="col-md-3 mb-4">
+            <a href="https://twitter.com/yourusername" target="_blank" class="d-block connect-icon">
+                <i class="fab fa-twitter fa-4x"></i>
+                <p class="mt-2">Twitter</p>
+            </a>
+        </div>
+        <div class="col-md-3 mb-4">
+            <a href="mailto:your.email@example.com" class="d-block connect-icon">
+                <i class="fas fa-envelope fa-4x"></i>
+                <p class="mt-2">Email</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Add Custom CSS for the Connect with Me Section -->
+<style>
+    #connect {
+        background-color: #f1f1f1; /* Light grey background */
+        padding: 40px 0; /* Vertical padding */
+        border-radius: 10px; /* Rounded corners */
+    }
+    .connect-icon {
+        display: inline-block;
+        color: #333; /* Default icon color */
+        transition: transform 0.3s, color 0.3s, background-color 0.3s;
+        border: 2px solid transparent; /* Transparent border */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding around icons */
+        background-color: #fff; /* White background for icons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+    .connect-icon:hover {
+        color: #007bff; /* Change color on hover */
+        background-color: #e9ecef; /* Light grey background on hover */
+        transform: scale(1.1); /* Slightly enlarge icon on hover */
+        border-color: #007bff; /* Border color on hover */
+    }
+    .connect-icon p {
+        margin-top: 10px;
+        font-weight: bold; /* Bold text for labels */
+    }
+</style>
+
